@@ -6,7 +6,6 @@ import AboutSection from '@/components/sections/AboutSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import PortfolioSection from '@/components/sections/PortfolioSection';
 import TeamSection from '@/components/sections/TeamSection';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import BrandsSection from '@/components/sections/BrandsSection';
 import FAQSection from '@/components/sections/FAQSection';
 import ContactSection from '@/components/sections/ContactSection';
@@ -44,10 +43,6 @@ const NewIndex = () => {
         
         <div id="team">
           <TeamSection />
-        </div>
-        
-        <div id="testimonials">
-          <TestimonialsSection />
         </div>
         
         <div id="brands">

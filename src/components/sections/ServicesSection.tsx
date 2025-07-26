@@ -39,6 +39,20 @@ const ServicesSection = () => {
       description: t.services.items[3].description,
       color: '#2B7AC2',
       image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg'
+    },
+    {
+      icon: Code,
+      title: t.services.items[4].title,
+      description: t.services.items[4].description,
+      color: '#5E56A7',
+      image: 'https://images.pexels.com/photos/386196/pexels-photo-386196.jpeg'
+    },
+    {
+      icon: Shield,
+      title: t.services.items[5].title,
+      description: t.services.items[5].description,
+      color: '#8377B9',
+      image: 'https://images.pexels.com/photos/267614/pexels-photo-267614.jpeg'
     }
   ];
 
@@ -134,14 +148,7 @@ const ServicesSection = () => {
                     <p className="text-gray-600 mb-4 leading-relaxed">
                       {service.description}
                     </p>
-                    <Button
-                      variant="ghost"
-                      className="p-0 h-auto font-semibold group/btn"
-                      style={{ color: service.color }}
-                    >
-                      Learn More
-                      <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
+
                   </CardContent>
                 </Card>
               </motion.div>

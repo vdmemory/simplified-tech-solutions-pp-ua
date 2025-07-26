@@ -16,8 +16,22 @@ export const translations: Record<'en' | 'ua', Translation> = {
       title: 'Innovative Software Solutions',
       subtitle: 'for Modern Business',
       description: 'We create cutting-edge software, secure cybersecurity solutions, mobile applications, and cloud services that drive your business forward.',
-      cta: 'Get Started',
-      ctaSecondary: 'View Portfolio'
+      cta: 'View Portfolio',
+      ctaSecondary: 'Contact Us',
+      items: [
+        {
+          title: 'Intelligent Solutions',
+          description: 'Modern software systems deeply integrated into the digital infrastructure of businesses.'
+        },
+        {
+          title: 'Adaptive AI',
+          description: 'Industry-specific machine learning algorithms that turn data into strategic decisions.'
+        },
+        {
+          title: 'Cross-Industry Solutions',
+          description: 'Software products for e-commerce, finance, healthcare, industry, and the public sector.'
+        },
+      ],
     },
     about: {
       title: 'About Us',
@@ -49,6 +63,22 @@ export const translations: Record<'en' | 'ua', Translation> = {
         {
           title: 'Cloud Services',
           description: 'Scalable cloud infrastructure and migration services for modern businesses.'
+        },
+        {
+          title: 'AI & Machine Learning',
+          description: 'Intelligent algorithms and data analytics to enhance decision-making and operational efficiency.'
+        },
+        {
+          title: 'DevOps & Automation',
+          description: 'Streamlined development processes and continuous integration for faster delivery.'
+        },
+        {
+          title: 'UI/UX Design',
+          description: 'User-centered design to create intuitive and engaging digital experiences.'
+        },
+        {
+          title: 'IT Consulting',
+          description: 'Expert advice to optimize your technology strategy and implementation.'
         }
       ]
     },
@@ -56,7 +86,49 @@ export const translations: Record<'en' | 'ua', Translation> = {
       title: 'Our Portfolio',
       subtitle: 'Showcasing Our Best Work',
       viewProject: 'View Project',
-      categories: ['All', 'Web Development', 'Mobile Apps', 'Cloud Solutions', 'Security']
+      categories: ['All', 'Web Development', 'Mobile Apps', 'Cloud Solutions', 'Security'],
+      items: [
+        {
+          title: 'E-Commerce Platform',
+          category: 'Web Development',
+          description: 'Modern e-commerce solution with advanced features',
+        },
+        {
+          title: 'Security Dashboard',
+          category: 'Security',
+          description: 'Comprehensive cybersecurity monitoring system',
+        },
+        {
+          title: 'Mobile Banking App',
+          category: 'Mobile Apps',
+          description: 'Secure and user-friendly banking application',
+        },
+        {
+          title: 'Cloud Infrastructure',
+          category: 'Cloud Solutions',
+          description: 'Scalable cloud architecture for enterprise',
+        },
+        {
+          title: 'Analytics Platform',
+          category: 'Web Development',
+          description: 'Real-time data analytics and visualization',
+        },
+        {
+          title: 'IoT Security System',
+          category: 'Security',
+          description: 'Advanced IoT device security management',
+        },
+        {
+          title: 'Fitness Tracker App',
+          category: 'Mobile Apps',
+          description: 'Track your fitness goals with ease',
+        },
+        {
+          title: 'AI Chatbot',
+          category: 'AI Solutions',
+          description: 'Intelligent chatbot for customer support and engagement'
+        }
+      ],
     },
     team: {
       title: 'Our Team',
@@ -84,30 +156,6 @@ export const translations: Record<'en' | 'ua', Translation> = {
         }
       ]
     },
-    testimonials: {
-      title: 'What Our Clients Say',
-      subtitle: 'Real Feedback from Real Clients',
-      items: [
-        {
-          text: 'Outstanding service and exceptional results. The team delivered beyond our expectations.',
-          author: 'John Smith',
-          position: 'CEO',
-          company: 'TechCorp Inc.'
-        },
-        {
-          text: 'Professional, reliable, and innovative. They transformed our business processes completely.',
-          author: 'Maria Garcia',
-          position: 'CTO',
-          company: 'InnovateLab'
-        },
-        {
-          text: 'The best technology partner we\'ve ever worked with. Highly recommended!',
-          author: 'David Wilson',
-          position: 'Founder',
-          company: 'StartupHub'
-        }
-      ]
-    },
     brands: {
       title: 'Trusted by Leading Brands',
       subtitle: 'We work with companies of all sizes'
@@ -132,7 +180,9 @@ export const translations: Record<'en' | 'ua', Translation> = {
           question: 'Can you work with our existing systems?',
           answer: 'Absolutely! We specialize in integrating with existing systems and modernizing legacy applications.'
         }
-      ]
+      ],
+      ctaBlock: 'Still have questions? We\'re here to help!',
+        ctaButton: 'Contact Us'
     },
     contact: {
       title: 'Get In Touch',
@@ -174,8 +224,22 @@ export const translations: Record<'en' | 'ua', Translation> = {
       title: 'Інноваційні програмні рішення',
       subtitle: 'для сучасного бізнесу',
       description: 'Ми створюємо передові програмні продукти, безпечні кібербезпекові рішення, мобільні додатки та хмарні сервіси, які рухають ваш бізнес вперед.',
-      cta: 'Почати',
-      ctaSecondary: 'Переглянути портфоліо'
+      cta: 'Переглянути портфоліо',
+      ctaSecondary: 'Зв\'язатися з нами',
+        items: [
+            {
+            title: 'Інтелектуальні рішення',
+            description: 'Сучасні програмні системи, глибоко інтегровані в цифрову інфраструктуру бізнесу.'
+            },
+            {
+            title: 'Адаптивний ШІ',
+            description: 'Алгоритми машинного навчання для конкретних галузей, які перетворюють дані на стратегічні рішення.'
+            },
+            {
+            title: 'Міжгалузеві рішення',
+            description: 'Програмні продукти для електронної комерції, фінансів, охорони здоров\'я, промисловості та державного сектору.'
+            }
+        ]
     },
     about: {
       title: 'Про нас',
@@ -207,6 +271,22 @@ export const translations: Record<'en' | 'ua', Translation> = {
         {
           title: 'Хмарні сервіси',
           description: 'Масштабована хмарна інфраструктура та послуги міграції для сучасного бізнесу.'
+        },
+        {
+          title: 'ШІ та машинне навчання',
+          description: 'Інтелектуальні алгоритми та аналітика даних для покращення прийняття рішень та операційної ефективності.'
+        },
+        {
+          title: 'DevOps та автоматизація',
+          description: 'Оптимізовані процеси розробки та безперервна інтеграція для швидшої доставки.'
+        },
+        {
+          title: 'UI/UX дизайн',
+          description: 'Дизайн, орієнтований на користувача, для створення інтуїтивно зрозумілих та привабливих цифрових досвідів.'
+        },
+        {
+          title: 'IT консалтинг',
+          description: 'Експертні консультації для оптимізації вашої технологічної стратегії та впровадження.'
         }
       ]
     },
@@ -214,7 +294,49 @@ export const translations: Record<'en' | 'ua', Translation> = {
       title: 'Наше портфоліо',
       subtitle: 'Демонструємо наші найкращі роботи',
       viewProject: 'Переглянути проект',
-      categories: ['Всі', 'Веб-розробка', 'Мобільні додатки', 'Хмарні рішення', 'Безпека']
+      categories: ['Всі', 'Веб-розробка', 'Мобільні додатки', 'Хмарні рішення', 'Безпека'],
+        items: [
+            {
+            title: 'Платформа електронної комерції',
+            category: 'Веб-розробка',
+            description: 'Сучасне рішення для електронної комерції з розширеними функціями'
+            },
+            {
+            title: 'Панель безпеки',
+            category: 'Безпека',
+            description: 'Комплексна система моніторингу кібербезпеки'
+            },
+            {
+            title: 'Мобільний банківський додаток',
+            category: 'Мобільні додатки',
+            description: 'Безпечний та зручний банківський додаток'
+            },
+            {
+            title: 'Хмарна інфраструктура',
+            category: 'Хмарні рішення',
+            description: 'Масштабована хмарна архітектура для підприємств'
+            },
+            {
+            title: 'Аналітична платформа',
+            category: 'Веб-розробка',
+            description: 'Аналітика даних в реальному часі та візуалізація'
+            },
+            {
+            title: 'Система безпеки IoT',
+            category: 'Безпека',
+            description: 'Розширене управління безпекою пристроїв IoT'
+            },
+            {
+            title: 'Додаток для відстеження фітнесу',
+            category: 'Мобільні додатки',
+            description: 'Легко відстежуйте свої фітнес-цілі'
+            },
+            {
+            title: 'Інтелектуальний чат-бот',
+            category: 'AI рішення',
+            description: 'Інтелектуальний чат-бот для підтримки клієнтів та залучення'
+            }
+        ]
     },
     team: {
       title: 'Наша команда',
@@ -242,30 +364,6 @@ export const translations: Record<'en' | 'ua', Translation> = {
         }
       ]
     },
-    testimonials: {
-      title: 'Що кажуть наші клієнти',
-      subtitle: 'Справжні відгуки від справжніх клієнтів',
-      items: [
-        {
-          text: 'Видатний сервіс та виняткові результати. Команда перевершила наші очікування.',
-          author: 'Іван Петренко',
-          position: 'CEO',
-          company: 'ТехКорп'
-        },
-        {
-          text: 'Професійно, надійно та інноваційно. Вони повністю трансформували наші бізнес-процеси.',
-          author: 'Марія Коваленко',
-          position: 'CTO',
-          company: 'ІнноваційнаЛаб'
-        },
-        {
-          text: 'Найкращий технологічний партнер, з яким ми коли-небудь працювали. Дуже рекомендуємо!',
-          author: 'Давид Сидоренко',
-          position: 'Засновник',
-          company: 'СтартапХаб'
-        }
-      ]
-    },
     brands: {
       title: 'Нам довіряють провідні бренди',
       subtitle: 'Ми працюємо з компаніями всіх розмірів'
@@ -290,7 +388,9 @@ export const translations: Record<'en' | 'ua', Translation> = {
           question: 'Чи можете ви працювати з нашими існуючими системами?',
           answer: 'Звичайно! Ми спеціалізуємося на інтеграції з існуючими системами та модернізації застарілих додатків.'
         }
-      ]
+      ],
+        ctaBlock: 'Все ще маєте запитання? Ми тут, щоб допомогти!',
+        ctaButton: 'Зв\'яжіться з нами'
     },
     contact: {
       title: 'Зв\'яжіться з нами',

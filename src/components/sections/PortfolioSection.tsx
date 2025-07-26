@@ -14,58 +14,55 @@ const PortfolioSection = () => {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      category: 'Web Development',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
-      description: 'Modern e-commerce solution with advanced features',
       technologies: ['React', 'Node.js', 'MongoDB'],
       color: '#A01F5D'
     },
     {
-      title: 'Security Dashboard',
-      category: 'Security',
       image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg',
-      description: 'Comprehensive cybersecurity monitoring system',
       technologies: ['Python', 'Django', 'PostgreSQL'],
       color: '#EE2024'
     },
     {
-      title: 'Mobile Banking App',
-      category: 'Mobile Apps',
       image: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg',
-      description: 'Secure and user-friendly banking application',
       technologies: ['React Native', 'Firebase', 'TypeScript'],
       color: '#64B232'
     },
     {
-      title: 'Cloud Infrastructure',
-      category: 'Cloud Solutions',
       image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
-      description: 'Scalable cloud architecture for enterprise',
       technologies: ['AWS', 'Docker', 'Kubernetes'],
       color: '#2B7AC2'
     },
     {
-      title: 'Analytics Platform',
-      category: 'Web Development',
       image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
-      description: 'Real-time data analytics and visualization',
       technologies: ['Vue.js', 'D3.js', 'Express'],
       color: '#8377B9'
     },
     {
-      title: 'IoT Security System',
-      category: 'Security',
       image: 'https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg',
-      description: 'Advanced IoT device security management',
       technologies: ['Go', 'Redis', 'MQTT'],
       color: '#5E56A7'
+    },
+    {
+      image: 'https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg',
+      technologies: ['Flutter', 'Firebase', 'GraphQL'],
+      color: '#A01F5D'
+    },
+    {
+      image: 'https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg',
+      technologies: ['Python', 'TensorFlow', 'Flask'],
+      color: '#EE2024'
     }
   ];
 
+  const updatedProjects = projects.map((project, index) => ({
+    ...project,
+   ...t.portfolio.items[index]
+  }));
+
   const filteredProjects = activeCategory === 0 
-    ? projects 
-    : projects.filter(project => project.category === t.portfolio.categories[activeCategory]);
+    ? updatedProjects
+    : updatedProjects.filter(project => project.category === t.portfolio.categories[activeCategory]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -159,14 +156,6 @@ const PortfolioSection = () => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <Button size="sm" className="bg-white/20 backdrop-blur-sm hover:bg-white/30">
-                        <ExternalLink className="w-4 h-4" />
-                      </Button>
-                      <Button size="sm" className="bg-white/20 backdrop-blur-sm hover:bg-white/30">
-                        <Github className="w-4 h-4" />
-                      </Button>
-                    </div>
                   </div>
                   
                   <CardContent className="p-6">

@@ -135,7 +135,7 @@ const FAQSection = () => {
               transition={{ duration: 0.2 }}
             >
               <p className="text-gray-700 mb-4">
-                Still have questions? We're here to help!
+                {t.faq.ctaBlock}
               </p>
               <motion.button
                 className="px-6 py-3 bg-gradient-to-r from-[#A01F5D] to-[#EE2024] text-white rounded-lg font-semibold hover:shadow-lg transition-shadow duration-300"
@@ -148,7 +148,7 @@ const FAQSection = () => {
                   }
                 }}
               >
-                Contact Us
+                {t.faq.ctaButton}
               </motion.button>
             </motion.div>
           </motion.div>

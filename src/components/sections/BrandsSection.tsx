@@ -8,17 +8,29 @@ const BrandsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  // Mock brand logos - in real project these would be actual brand logos
   const brands = [
-    { name: 'TechCorp', logo: 'https://via.placeholder.com/120x60/A01F5D/FFFFFF?text=TechCorp' },
-    { name: 'InnovateLab', logo: 'https://via.placeholder.com/120x60/EE2024/FFFFFF?text=InnovateLab' },
-    { name: 'StartupHub', logo: 'https://via.placeholder.com/120x60/FBB216/FFFFFF?text=StartupHub' },
-    { name: 'CloudTech', logo: 'https://via.placeholder.com/120x60/64B232/FFFFFF?text=CloudTech' },
-    { name: 'SecureNet', logo: 'https://via.placeholder.com/120x60/2B7AC2/FFFFFF?text=SecureNet' },
-    { name: 'DataFlow', logo: 'https://via.placeholder.com/120x60/8377B9/FFFFFF?text=DataFlow' },
-    { name: 'MobileTech', logo: 'https://via.placeholder.com/120x60/5E56A7/FFFFFF?text=MobileTech' },
-    { name: 'WebSolutions', logo: 'https://via.placeholder.com/120x60/A01F5D/FFFFFF?text=WebSolutions' }
+    {
+      name: 'Google',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg',
+    },
+    {
+      name: 'Microsoft',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg',
+    },
+    {
+      name: 'Amazon Web Services',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg',
+    },
+    {
+      name: 'IBM',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg',
+    },
+    {
+      name: 'GitHub',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg',
+    }
   ];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -64,28 +76,6 @@ const BrandsSection = () => {
             </motion.p>
           </motion.div>
 
-          {/* Brands Grid */}
-          <motion.div 
-            variants={containerVariants}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center"
-          >
-            {brands.map((brand, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.2 }}
-                className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <img
-                  src={brand.logo}
-                  alt={brand.name}
-                  className="max-w-full h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </motion.div>
-            ))}
-          </motion.div>
-
           {/* Animated Logos Marquee */}
           <motion.div 
             variants={itemVariants}
@@ -93,14 +83,14 @@ const BrandsSection = () => {
           >
             <motion.div
               className="flex gap-8 items-center"
-              animate={{ x: [0, -1000] }}
+              animate={{ x: [0, -500] }}
               transition={{
                 duration: 20,
                 repeat: Infinity,
                 ease: "linear"
               }}
             >
-              {[...brands, ...brands].map((brand, index) => (
+              {[...brands, ...brands, ...brands].map((brand, index) => (
                 <div
                   key={index}
                   className="flex-shrink-0 w-32 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center"

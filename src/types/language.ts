@@ -20,6 +20,10 @@ export interface Translation {
     description: string;
     cta: string;
     ctaSecondary: string;
+    items: {
+      title: string
+      description: string
+    }[]
   };
   
   // About Section
@@ -51,6 +55,11 @@ export interface Translation {
     subtitle: string;
     viewProject: string;
     categories: string[];
+    items: {
+      title: string
+      category: string
+      description: string
+    }[]
   };
   
   // Team Section
@@ -61,18 +70,6 @@ export interface Translation {
       name: string;
       position: string;
       bio: string;
-    }[];
-  };
-  
-  // Testimonials Section
-  testimonials: {
-    title: string;
-    subtitle: string;
-    items: {
-      text: string;
-      author: string;
-      position: string;
-      company: string;
     }[];
   };
   
@@ -90,6 +87,8 @@ export interface Translation {
       question: string;
       answer: string;
     }[];
+    ctaBlock: string;
+    ctaButton: string;
   };
   
   // Contact Section

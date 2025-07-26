@@ -4,6 +4,8 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/hooks/useLanguage';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import logo from '@/assets/logo.png';
+import {configCompany} from "@/data/configCompany.ts"; // Adjust the path as necessary
 
 const NewNavbar = () => {
   const { t } = useLanguage();
@@ -28,12 +30,11 @@ const NewNavbar = () => {
   };
 
   const navItems = [
-    { label: t.nav.home, id: 'hero' },
-    { label: t.nav.about, id: 'about' },
+    // { label: t.nav.home, id: 'hero' },
+    // { label: t.nav.about, id: 'about' },
     { label: t.nav.services, id: 'services' },
     { label: t.nav.portfolio, id: 'portfolio' },
     { label: t.nav.team, id: 'team' },
-    { label: t.nav.testimonials, id: 'testimonials' },
     { label: t.nav.faq, id: 'faq' },
   ];
 
@@ -56,11 +57,9 @@ const NewNavbar = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="w-8 h-8 bg-gradient-to-r from-[#A01F5D] to-[#EE2024] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">T</span>
-            </div>
+            <img src={logo} alt="logo company" className={`h-11`} />
             <span className={`text-xl font-bold ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
-              TechCorp
+              {configCompany.name}
             </span>
           </motion.div>
 
