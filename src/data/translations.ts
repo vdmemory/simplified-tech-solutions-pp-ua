@@ -192,14 +192,6 @@ export const translations: Record<'en' | 'ua', Translation> = {
             question: 'How do you ensure data security?',
             answer: 'We implement industry-standard security practices, including encryption, access controls, and regular security audits to protect your data.'
         },
-        {
-            question: 'What is your pricing model?',
-            answer: 'We offer flexible pricing models including fixed-price, time and materials, and retainer agreements based on project scope and requirements.'
-        },
-        {
-            question: 'Can you help with digital transformation?',
-            answer: 'Yes, we assist businesses in their digital transformation journey by modernizing processes, systems, and technologies to enhance efficiency and competitiveness.'
-        }
       ],
       ctaBlock: 'Still have questions? We\'re here to help!',
         ctaButton: 'Contact Us'
@@ -420,14 +412,6 @@ export const translations: Record<'en' | 'ua', Translation> = {
             question: 'Як ви забезпечуєте безпеку даних?',
             answer: 'Ми впроваджуємо галузеві стандарти безпеки, включаючи шифрування, контроль доступу та регулярні аудити безпеки для захисту ваших даних.'
         },
-        {
-            question: 'Яка ваша модель ціноутворення?',
-            answer: 'Ми пропонуємо гнучкі моделі ціноутворення, включаючи фіксовану ціну, оплату за час і матеріали та угоди на утримання залежно від обсягу та вимог проекту.'
-        },
-        {
-            question: 'Чи можете ви допомогти з цифровою трансформацією?',
-            answer: 'Так, ми допомагаємо бізнесам у їхньому шляху цифрової трансформації, модернізуючи процеси, системи та технології для підвищення ефективності та конкурентоспроможності.'
-        }
       ],
         ctaBlock: 'Все ще маєте запитання? Ми тут, щоб допомогти!',
         ctaButton: 'Зв\'яжіться з нами'
