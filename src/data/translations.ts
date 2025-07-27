@@ -179,6 +179,26 @@ export const translations: Record<'en' | 'ua', Translation> = {
         {
           question: 'Can you work with our existing systems?',
           answer: 'Absolutely! We specialize in integrating with existing systems and modernizing legacy applications.'
+        },
+        {
+            question: 'What is your approach to project management?',
+            answer: 'We follow Agile methodologies to ensure flexibility, transparency, and continuous improvement throughout the project lifecycle.'
+        },
+        {
+            question: 'Do you offer custom solutions?',
+            answer: 'Yes, we tailor our services to meet the specific needs and goals of each client, ensuring a personalized approach.'
+        },
+        {
+            question: 'How do you ensure data security?',
+            answer: 'We implement industry-standard security practices, including encryption, access controls, and regular security audits to protect your data.'
+        },
+        {
+            question: 'What is your pricing model?',
+            answer: 'We offer flexible pricing models including fixed-price, time and materials, and retainer agreements based on project scope and requirements.'
+        },
+        {
+            question: 'Can you help with digital transformation?',
+            answer: 'Yes, we assist businesses in their digital transformation journey by modernizing processes, systems, and technologies to enhance efficiency and competitiveness.'
         }
       ],
       ctaBlock: 'Still have questions? We\'re here to help!',
@@ -387,6 +407,26 @@ export const translations: Record<'en' | 'ua', Translation> = {
         {
           question: 'Чи можете ви працювати з нашими існуючими системами?',
           answer: 'Звичайно! Ми спеціалізуємося на інтеграції з існуючими системами та модернізації застарілих додатків.'
+        },
+        {
+            question: 'Який ваш підхід до управління проектами?',
+            answer: 'Ми дотримуємося Agile-методологій, щоб забезпечити гнучкість, прозорість та постійне вдосконалення протягом життєвого циклу проекту.'
+        },
+        {
+            question: 'Чи пропонуєте ви індивідуальні рішення?',
+            answer: 'Так, ми адаптуємо наші послуги до конкретних потреб та цілей кожного клієнта, забезпечуючи персоналізований підхід.'
+        },
+        {
+            question: 'Як ви забезпечуєте безпеку даних?',
+            answer: 'Ми впроваджуємо галузеві стандарти безпеки, включаючи шифрування, контроль доступу та регулярні аудити безпеки для захисту ваших даних.'
+        },
+        {
+            question: 'Яка ваша модель ціноутворення?',
+            answer: 'Ми пропонуємо гнучкі моделі ціноутворення, включаючи фіксовану ціну, оплату за час і матеріали та угоди на утримання залежно від обсягу та вимог проекту.'
+        },
+        {
+            question: 'Чи можете ви допомогти з цифровою трансформацією?',
+            answer: 'Так, ми допомагаємо бізнесам у їхньому шляху цифрової трансформації, модернізуючи процеси, системи та технології для підвищення ефективності та конкурентоспроможності.'
         }
       ],
         ctaBlock: 'Все ще маєте запитання? Ми тут, щоб допомогти!',
