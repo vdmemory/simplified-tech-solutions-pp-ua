@@ -8,11 +8,11 @@ export const configCompany = {
     addressEng: 'Ukraine, 61009, Kharkiv region, Kharkiv city, Pryvokzalna street, house 30',
     formEmail: 'simplifiedtechsolutionsnew@gmail.com',
 
-    olx: 'https://www.olx.ua/uk/list/user/2hseJj',
-    prom: 'https://prom.ua/c4122303-tov-smart-horizons.html',
-    facebook: 'https://www.facebook.com/profile.php?id=61578364689074',
-    instagram: 'https://www.instagram.com/silver.development/',
-    linkedin: 'https://www.linkedin.com/in/max-capran-b0a5a3376/',
+    olx: 'https://www.olx.ua/uk/list/user/2hsnuD',
+    prom: 'https://prom.ua/c4123134-tovaristvo-obmezhenoyu-vidpovidalnistyu.html',
+    facebook: 'https://www.facebook.com/profile.php?id=61578777153726',
+    instagram: 'https://www.instagram.com/simplifiedtechsolutionsnew/',
+    linkedin: 'https://www.linkedin.com',
 
-    whatsapp: 'https://www.whatsapp.com/silverDevelopment', // ???
+    whatsapp: 'https://www.whatsapp.com', // ???
 };
